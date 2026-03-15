@@ -1,0 +1,27 @@
+{
+  "name": "TEDDY-XMD",
+  "description": "Javascript WhatsApp bot made by Teddy Tech",
+  "logo": "https://files.catbox.moe/13nyhx.jpg",
+  "keywords": ["TEDDY-BOT"],
+  "success_url": "/",
+  "stack": "container",
+  
+  "env": {
+    "DB_NAME": {
+      "description": "MongoDB Database Name",
+      "required": true
+    },
+    "MONGODB_URL": {
+      "description": "MongoDB connection URL",
+      "value": "mongodb+srv://sana:jawadsaan@cluster0.39ezrfs.mongodb.net/?appName=Cluster0",
+      "required": true
+    }
+  },
+
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "stack": "heroku-24"
+}
